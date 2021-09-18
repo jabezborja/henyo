@@ -36,30 +36,27 @@ xy = loop expressions (x is 10, and y is 100)
 Let's say we have:
 `+++>++<+`
 
-So it works like this:
+So it works like this:\
 We have 301 cells but the initial cell is in the middle, so it's at 150 cell.
 
-But let's have 5 here:
+But let's have 5 here:\
 [0][0][`**0**`][0][0]
 The asterisks are the pointer. It points in the middle of the cells.
 
-Once the compiler reads the "+", it will increment.
+Once the compiler reads the "+", it will increment.\
 [0][0][`**3**`][0][0]
 There are 3 "+" so it's 3.
 
-Once the ">" comes in, it will move the pointer to right.
+Once the ">" comes in, it will move the pointer to right.\
 [0][0][3][`**0**`][0]
 
-Increments by 2 because there are 2 "+"
-
+Increments by 2 because there are 2 "+"\
 [0][0][3][`**2**]`[0]
 
-And then go to left again with "<"
-
+And then go to left again with "<"\
 [0][0][`**3**`][2][0]
 
-And increment by 1 because there is only 1 "+"
-
+And increment by 1 because there is only 1 "+"\
 [0][0][`**4**`][2][0]
 
 ## Printing
@@ -72,7 +69,7 @@ It's inefficient and we don't wanna put 97 "+" just to print the letter `a`. So 
 ## Loops
 So the start of the loop is the `[` or the bracket and the end is the left bracket or `]`.
 
-So let's say we have:
+So let's say we have:\
 `[x++{+}]`
 
 Now, it looks weird but it's cool (I guess).
@@ -89,24 +86,24 @@ Now the curly braces, what are those? Inside of those curly braces are what shou
 
 So inside of our curly brace is a "+" so where the current pointer is pointing will increment 12 times.
 
-So:
+So:\
 [0][0][`**12**`][0][0]
 
-What if different case?
+What if different case?\
 `[x++{-}]`
 
 It will decrement 12 times.
 
-So:
+So:\
 [0][0][`**-12**`][0][0]
 
-What about the ">" or "<"?
+What about the ">" or "<"?\
 `[x++{>}]`
 
 So it will jump 12 cells right and "<" left.
 
-From:
+From:\
 [0][0][`**0**`][0][0]
 
-To:
+To:\
 [0][0][`-0-`][0][0][0][0][0][0][0][0][0][0][0][`**0**`]
