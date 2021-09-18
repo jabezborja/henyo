@@ -25,11 +25,13 @@ If you still don't believe it's working. Try this:
 Henyo consists of cells, 301 memory cells. Each cell has a 0 integer initial value which increments when you type "+".
 
 Henyo has only 5 commands:
-`+` = increments the cell
-`-` = decrements the cell
-`>` = move to cell right
-`<` = move to cell left
-`xy` = loop expressions (x is 10, and y is 100)
+```
++ = increments the cell
+- = decrements the cell
+> = move to cell right
+< = move to cell left
+xy = loop expressions (x is 10, and y is 100)
+```
 
 Let's say we have:
 `+++>++<+`
