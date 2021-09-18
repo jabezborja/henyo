@@ -74,6 +74,18 @@ Example: The letter `a` in ASCII is 97 so you have to type 97 "+".
 
 It's inefficient and we don't wanna put 97 "+" just to print the letter `a`. So I came up with a different idea of loop. I don't really understand how Brainf*ck loop's works so I created my own.
 
+If you want to print something, it should end with `.` or dot. In the end.
+
+Example:\
+`+++++.`
+
+so it will execute. Simply, it's just like a `;` or semicolon in programming languages. It allows to have just 1 line file.
+
+Example:\
+`+++++.+++++.`
+
+So that they will execute differently.
+
 ## Loops
 So the start of the loop is the `[` or the bracket and the end is the left bracket or `]`.
 
