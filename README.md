@@ -40,27 +40,27 @@ So it works like this:
 We have 301 cells but the initial cell is in the middle, so it's at 150 cell.
 
 But let's have 5 here:
-[0][0][**0**][0][0]
+[0][0][`**0**`][0][0]
 The asterisks are the pointer. It points in the middle of the cells.
 
 Once the compiler reads the "+", it will increment.
-[0][0][**3**][0][0]
+[0][0][`**3**`][0][0]
 There are 3 "+" so it's 3.
 
 Once the ">" comes in, it will move the pointer to right.
-[0][0][3][**0**][0]
+[0][0][3][`**0**`][0]
 
 Increments by 2 because there are 2 "+"
 
-[0][0][3][**2**][0]
+[0][0][3][`**2**]`[0]
 
 And then go to left again with "<"
 
-[0][0][**3**][2][0]
+[0][0][`**3**`][2][0]
 
 And increment by 1 because there is only 1 "+"
 
-[0][0][**4**][2][0]
+[0][0][`**4**`][2][0]
 
 ## Printing
 So how's printing works? Glad you ask. So Henyo relies to ASCII for turning numbers into letters.
@@ -90,7 +90,7 @@ Now the curly braces, what are those? Inside of those curly braces are what shou
 So inside of our curly brace is a "+" so where the current pointer is pointing will increment 12 times.
 
 So:
-[0][0][**12**][0][0]
+[0][0][`**12**`][0][0]
 
 What if different case?
 `[x++{-}]`
@@ -98,7 +98,7 @@ What if different case?
 It will decrement 12 times.
 
 So:
-[0][0][**-12**][0][0]
+[0][0][`**-12**`][0][0]
 
 What about the ">" or "<"?
 `[x++{>}]`
@@ -106,7 +106,7 @@ What about the ">" or "<"?
 So it will jump 12 cells right and "<" left.
 
 From:
-[0][0][**0**][0][0]
+[0][0][`**0**`][0][0]
 
 To:
-[0][0][-0-][0][0][0][0][0][0][0][0][0][0][0][**0**]
+[0][0][`-0-`][0][0][0][0][0][0][0][0][0][0][0][`**0**`]
