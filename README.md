@@ -1,5 +1,5 @@
 # Henyo
-Henyo is an esoteric programming language inspired from Brainf*ck, an esoteric programming language too.
+Henyo is an esoteric programming language inspired by Brainf*ck, an esoteric programming language too.
 
 # Getting started
 Try to run Henyo first. No framework. No other download. No gotchas. Just clone and run it. Henyo is created from raw Python 3.
