@@ -1,6 +1,4 @@
-import os
-
-class UtakSheesh:
+class Henyo:
     def __init__(self):
         self.char_count = 0
 
@@ -23,7 +21,7 @@ class UtakSheesh:
             self.cells.append(0)
 
     def searchCells(self):
-        with open("sheesh.us") as file:
+        with open(input("Filename: ")) as file:
             for line in file:
                 for char in line:
                     self.check(char)
@@ -78,4 +76,5 @@ class UtakSheesh:
                 self.content_count = 0
 
 if __name__ == '__main__':
-    UtakSheesh()
+    # Initialize Henyo
+    Henyo()
