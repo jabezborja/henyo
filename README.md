@@ -36,34 +36,35 @@ xy = loop expressions (x is 10, and y is 100)
 Let's say we have:
 `+++>++<+`
 
-So it works like this:\
+So it works like this:
 We have 301 cells but the initial cell is in the middle, so it's at 150 cell.
 
-But let's have 5 here:\
+But let's have 5 here:
 
 `[0][0][**0**][0][0]`
 
 The asterisks are the pointer. It points in the middle of the cells.
 
-Once the compiler reads the "+", it will increment.\
+Once the compiler reads the "+", it will increment.
 
 `[0][0][**3**][0][0]`
 
 There are 3 "+" so it's 3.
 
-Once the ">" comes in, it will move the pointer to right.\
+Once the ">" comes in, it will move the pointer to right.
 
 `[0][0][3][**0**][0]`
 
-Increments by 2 because there are 2 "+"\
+Increments by 2 because there are 2 "+"
 
 `[0][0][3][**2**][0]`
 
-And then go to left again with "<"\
+And then go to left again with "<"
 
 `[0][0][**3**][2][0]`
 
-And increment by 1 because there is only 1 "+"\
+And increment by 1 because there is only 1 "+"
+
 `[0][0][**4**][2][0]`
 
 ## Printing
@@ -109,8 +110,8 @@ What about the ">" or "<"?\
 
 So it will jump 12 cells right and "<" left.
 
-From:
+From:\
 `[0][0][**0**][0][0]`
 
-To:
-`[0][0][-0-][0][0][0][0][0][0][0][0][0][0][0][**0**]`\
+To:\
+`[0][0][-0-][0][0][0][0][0][0][0][0][0][0][0][**0**]`
